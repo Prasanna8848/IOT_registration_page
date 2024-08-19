@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 const hbs = require("hbs")
 require("./db/conn.js");
+require("dotenv").config
 const Registration = require("./models/registrations")
 
 const port = process.env.PORT || 3000;
